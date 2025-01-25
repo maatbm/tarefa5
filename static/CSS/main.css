@@ -154,6 +154,6 @@ button {
 
 @media  screen and (max-width: 500px) {
     .container{
-        width: 95%;
+        width: 80%;
     }
 }
