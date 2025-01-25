@@ -151,3 +151,9 @@ button {
 #dot:hover {
     background-color: var(--orangered);
 }
+
+@media  screen and (max-width: 500px) {
+    .container{
+        width: 95%;
+    }
+}
