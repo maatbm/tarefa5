@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -8,7 +10,10 @@
     --white_smoke: whitesmoke;
     --black: black;
     --light_gray: lightgray;
-
+    --white: white;
+    --gray: gray;
+    --orange: orange;
+    --orangered: orangered;
 }
 
 body {
@@ -41,9 +46,9 @@ body {
     gap: 10px;
 }
 
-#display{
+#display {
     grid-area: display;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 1rem;
     display: flex;
     justify-content: flex-end;
@@ -51,28 +56,98 @@ body {
     padding: 0 20px;
     font-size: 3rem;
     border: 1px solid var(--black);
+    font-family: "Orbitron", serif;
 }
 
-#number[data-grid-area="number1"] { grid-area: number1; }
-#number[data-grid-area="number2"] { grid-area: number2; }
-#number[data-grid-area="number3"] { grid-area: number3; }
-#operator[data-grid-area="operator1"] { grid-area: operator1; }
-#number[data-grid-area="number4"] { grid-area: number4; }
-#number[data-grid-area="number5"] { grid-area: number5; }
-#number[data-grid-area="number6"] { grid-area: number6; }
-#operator[data-grid-area="operator2"] { grid-area: operator2; }
-#number[data-grid-area="number7"] { grid-area: number7; }
-#number[data-grid-area="number8"] { grid-area: number8; }
-#number[data-grid-area="number9"] { grid-area: number9; }
-#operator[data-grid-area="operator3"] { grid-area: operator3; }
-#number[data-grid-area="number0"] { grid-area: number0; }
-#dot[data-grid-area="dot"] { grid-area: dot; }
-#equal[data-grid-area="equal"] { grid-area: equal; }
-#operator[data-grid-area="operator4"] { grid-area: operator4; }
+#number[data-grid-area="number1"] {
+    grid-area: number1;
+}
 
-button{
+#number[data-grid-area="number2"] {
+    grid-area: number2;
+}
+
+#number[data-grid-area="number3"] {
+    grid-area: number3;
+}
+
+#operator[data-grid-area="operator1"] {
+    grid-area: operator1;
+}
+
+#number[data-grid-area="number4"] {
+    grid-area: number4;
+}
+
+#number[data-grid-area="number5"] {
+    grid-area: number5;
+}
+
+#number[data-grid-area="number6"] {
+    grid-area: number6;
+}
+
+#operator[data-grid-area="operator2"] {
+    grid-area: operator2;
+}
+
+#number[data-grid-area="number7"] {
+    grid-area: number7;
+}
+
+#number[data-grid-area="number8"] {
+    grid-area: number8;
+}
+
+#number[data-grid-area="number9"] {
+    grid-area: number9;
+}
+
+#operator[data-grid-area="operator3"] {
+    grid-area: operator3;
+}
+
+#number[data-grid-area="number0"] {
+    grid-area: number0;
+}
+
+#dot[data-grid-area="dot"] {
+    grid-area: dot;
+}
+
+#equal[data-grid-area="equal"] {
+    grid-area: equal;
+}
+
+#operator[data-grid-area="operator4"] {
+    grid-area: operator4;
+}
+
+button {
     border-radius: 1rem;
     border: none;
     font-size: 2rem;
     cursor: pointer;
+}
+
+#number {
+    background-color: var(--gray);
+    transition: 0.5s;
+}
+
+#number:hover {
+    background-color: var(--white_smoke);
+}
+
+#operator,
+#equal,
+#dot {
+    background-color: var(--orange);
+    transition: 0.5s;
+}
+
+#operator:hover,
+#equal:hover,
+#dot:hover {
+    background-color: var(--orangered);
 }

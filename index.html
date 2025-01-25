@@ -5,27 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="static/CSS/main.css">
     <script src="static/JS/main.js"></script>
-    <title>Document</title>
+    <title>Tarefa5</title>
 </head>
 <body>
     <main class="container">
-        <div id="display">1234455.45</div>
-        <button id="number" data-grid-area="number1">1</button>
-        <button id="number" data-grid-area="number2">2</button>
-        <button id="number" data-grid-area="number3">3</button>
-        <button id="operator" data-grid-area="operator1">*</button>
-        <button id="number" data-grid-area="number4">4</button>
-        <button id="number" data-grid-area="number5">5</button>
-        <button id="number" data-grid-area="number6">6</button>
-        <button id="operator" data-grid-area="operator2">+</button>
-        <button id="number" data-grid-area="number7">7</button>
-        <button id="number" data-grid-area="number8">8</button>
-        <button id="number" data-grid-area="number9">9</button>
-        <button id="operator" data-grid-area="operator3">-</button>
-        <button id="number" data-grid-area="number0">0</button>
-        <button id="dot" data-grid-area="dot">.</button>
-        <button id="equal" data-grid-area="equal">=</button>
-        <button id="operator" data-grid-area="operator4">/</button>
+        <div id="display"></div>
+        <button id="number" data-grid-area="number1" onclick="updateDisplay('1')">1</button>
+        <button id="number" data-grid-area="number2" onclick="updateDisplay('2')">2</button>
+        <button id="number" data-grid-area="number3" onclick="updateDisplay('3')">3</button>
+        <button id="operator" data-grid-area="operator1" onclick="updateOperator('*')">*</button>
+        <button id="number" data-grid-area="number4" onclick="updateDisplay('4')">4</button>
+        <button id="number" data-grid-area="number5" onclick="updateDisplay('5')">5</button>
+        <button id="number" data-grid-area="number6" onclick="updateDisplay('6')">6</button>
+        <button id="operator" data-grid-area="operator2" onclick="updateOperator('+')">+</button>
+        <button id="number" data-grid-area="number7" onclick="updateDisplay('7')">7</button>
+        <button id="number" data-grid-area="number8" onclick="updateDisplay('8')">8</button>
+        <button id="number" data-grid-area="number9" onclick="updateDisplay('9')">9</button>
+        <button id="operator" data-grid-area="operator3" onclick="updateOperator('-')">-</button>
+        <button id="number" data-grid-area="number0" onclick="updateDisplay('0')">0</button>
+        <button id="dot" data-grid-area="dot" onclick="updateDisplay('.')">.</button>
+        <button id="equal" data-grid-area="equal" onclick="calculateResult()">=</button>
+        <button id="operator" data-grid-area="operator4" onclick="updateOperator('/')">/</button>
     </main>
 </body>
 </html>
